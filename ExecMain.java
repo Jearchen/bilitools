@@ -18,6 +18,7 @@ public class ExecMain {
             }
         }
     }
+
     public static void checkArgsValidate(String[] args) throws Exception{
         if(args.length>2){
             throw new Exception(String.format("请输出两个参数个数,格式:java %s %s",args[0],args[1]));
@@ -30,6 +31,7 @@ public class ExecMain {
     }
 
     public static void main(String[] args) throws Exception {
+        
         checkArgsValidate(args);
         File dirs = new File(args[0]);
         File dest = new File(args[1]);
